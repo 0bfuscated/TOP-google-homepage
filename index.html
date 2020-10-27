@@ -1,112 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
 <head>
+    <!-- declares characters used -->
+    <meta charset="utf-8">
+    
+    <!-- add tab title -->
+    <title>tab text</title>
+
+    <!-- document metadata -->
+    <meta name="description" content="boilerplate">
+    <meta name="author" content="0bfuscated">
+    
+    <!-- link to styles file -->
+    <link rel="stylesheet" href="style_01.css" />
+ 
+    <!-- style section for css in html file -->
     <style>
-        #topBar {
-
-        }
-        #search {
-            margin: auto;
-            width: 50%;
-            text-align: center;
-        }
-            #centerImg {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 200px;
-                padding-bottom: 25px;
-            }
-            #centerSearchBar {
-                margin-bottom: 25px;
-                border-radius: 50px;
-                border: 1px solid #e4e6e9;
-                height: 40px;
-                width: 400px;
-            }
-            .centerSearchButton {
-                padding: 10px;
-                font-family: arial;
-                font-size: 14px;
-                background-color: #f4f4f4;
-                border: 1px solid #f4f4f4;
-                border-radius: 5px;
-            }
-            .centerSearchButton:hover {
-                border: 1px solid #737373;
-                box-shadow: 0px 2px 2px grey;
-
-            }
-        #bottomBar {
-            position: absolute;
-            bottom: 0px;
-            background-color: #bebebe;
-            width: 110%;
-            text-align: center;
-        }
-
-
-        .font1 {
-            font-family: arial;
-            font-size: 13px;
-            color: #8d8d8d;
-        }
-
-        .font2 {
-            font-family: arial;
-            font-size: 14px;
-        }
-
-        .link1 {
-            color: #737373;
-            text-decoration: none;
-        }
-
-        .link1:hover {
-            text-decoration: underline;
-        }
 
     </style>
 </head>
 
 <body>
-    <div id="topBar" class="font1">
-        <p> 
+    <header class="font1">
+        <p>
             <span><a href="#" class="link1" target="blank">About</a></span>
             <span><a href="#" class="link1" target="blank">Store</a></span>
+        </p>
+        <p>
             <span><a href="#" class="link1" target="blank">Gmail</a></span>
             <span><a href="#" class="link1" target="blank">Images</a></span>
-            <button type="submit">Sign in</button>
+            <button class="button1" type="submit">Sign in</button>
         </p>
-        <!-- add grid logo button -->
+    </header>
 
-        <!-- add dead links to these -->
-        <!-- figure out fonts -->
-        <!-- align at top -->
-    </div>
-
-
-
-
-    <div id="search">
-        <img id="centerImg" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-        <input id="centerSearchBar" type="text">
+    <main>
+        <img class="centerImg" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        <input class="centerSearchBar" type="text">
         <!-- add search logo and microphone button inside search bar -->
         <br>
-        <button class="centerSearchButton" type="submit">Google Search</button>
-        <button  class="centerSearchButton" type="submit">I'm Feeling Lucky</button>
-    </div>
+        <div>
+            <button class="centerSearchButton" type="submit">Google Search</button>
+            <button  class="centerSearchButton" type="submit">I'm Feeling Lucky</button>
+        </div>
 
-    <div id="bottomBar" class="font2">
+    </main>
+
+
+    <footer class="font2">
         <p>
-        <span><a href="#" class="link1" target="blank">Advertising</a></span>
-        <span><a href="#" class="link1" target="blank">Business</a></span>
-        <span><a href="#" class="link1" target="blank">How Search Works</a></span>
-        <span><a href="#" class="link1" target="blank">Privacy</a></span>
-        <span><a href="#" class="link1" target="blank">Terms</a></span>
-        <span><a href="#" class="link1" target="blank">Settings</a></span>
+            <span><a href="#" class="link2" target="blank">Advertising</a></span>
+            <span><a href="#" class="link2" target="blank">Business</a></span>
+            <span><a href="#" class="link2" target="blank">How Search Works</a></span>
         </p>
-        <!-- add dead links to these -->
-        <!-- figure out fonts -->
-        <!-- align at top -->
-        <!-- add footer bar -->
-    </div>
+        <p>
+            <span><a href="#" class="link2" target="blank">Privacy</a></span>
+            <span><a href="#" class="link2" target="blank">Terms</a></span>
+            <span><a href="#" class="link2" target="blank">Settings</a></span>
+        </p>
+    </footer>
 </body>
+
+</html>
